@@ -1,21 +1,22 @@
 #include <iostream>
-
+#include <string>
 #include "LargeInt.h"
 
 using namespace std;
 
 int main()
 {
-	// Use 'Large' to call functions from the LargeInt class.
 	LargeInt Large;
+	string temp;
+	cout << "Please enter a large numbers with no decimals: ";
+	cin >> temp;
+	Large.SetString(temp);
 
-	// Call Void function ReturnArrayA for user input on GetStringA
-	// And manipulation GetStringA.
-	Large.ReturnArrayA();
-
-	// Call Void function ReturnArrayB for user input on GetStringB
-	// And manipulation on GetStringB.
-	Large.ReturnArrayB();
+	LargeInt Large2;
+	string temp;
+	cout << "Please enter a second large number with no decimals: ";
+	cin >> temp;
+	Large2.SetString(temp);
 
 	system("pause");
 	return 0;

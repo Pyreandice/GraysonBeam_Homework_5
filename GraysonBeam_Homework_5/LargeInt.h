@@ -1,26 +1,27 @@
 #ifndef LARGE_INT_
 #define LARGE_INT_
+#include <vector>
 
 class LargeInt
 {
 private:
-	
 	std::vector<int> numArrayA;
-	std::vector<int> numArrayB;
+	std::string userString;
 
 public:
 	// Constructor
 	LargeInt();
 
-	std::string GetStringA;
-	std::string GetStringB;
-	//const int arrlength = 50;
+	// Getter
+	std::string GetStringA();
+	std::vector<int> GetDigits();
+
+	// Setter
+	std::string newString();
+	void SetString(std::string newString);
 
 	// Take the user inputA and transfer it to ReturnArrayA.
-	void ReturnArrayA();
-
-	// Take the user inputB and transfer it to ReturnArrayB.
-	void ReturnArrayB();
+	//void ReturnArrayA();
 
 	// Destructor
 	~LargeInt();
