@@ -1,0 +1,13 @@
+﻿  LargeInt.cpp
+  Main.cpp
+c:\users\grayson\source\repos\graysonbeam_homework_5\graysonbeam_homework_5\largeint.h(8): error C2039: 'vector': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\iostream(14): note: see declaration of 'std'
+c:\users\grayson\source\repos\graysonbeam_homework_5\graysonbeam_homework_5\largeint.h(8): error C2143: syntax error: missing ';' before '<'
+c:\users\grayson\source\repos\graysonbeam_homework_5\graysonbeam_homework_5\largeint.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\grayson\source\repos\graysonbeam_homework_5\graysonbeam_homework_5\largeint.h(8): error C2238: unexpected token(s) preceding ';'
+c:\users\grayson\source\repos\graysonbeam_homework_5\graysonbeam_homework_5\largeint.h(9): error C2039: 'vector': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\iostream(14): note: see declaration of 'std'
+c:\users\grayson\source\repos\graysonbeam_homework_5\graysonbeam_homework_5\largeint.h(9): error C2143: syntax error: missing ';' before '<'
+c:\users\grayson\source\repos\graysonbeam_homework_5\graysonbeam_homework_5\largeint.h(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\grayson\source\repos\graysonbeam_homework_5\graysonbeam_homework_5\largeint.h(9): error C2238: unexpected token(s) preceding ';'
+  Generating Code...
