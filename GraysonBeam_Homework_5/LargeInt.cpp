@@ -33,8 +33,7 @@ void LargeInt::SetString(string newString)
 {
 	for (int x = 0; x < newString.length() - 1; x++)
 	{
-		// The value at the current location on newString at x is equal to 
-		// the current value of numVectorA at x.
+		// Take the current value at newString[x] and make it the same value at vector<int> numArrayA via .push_back()...
 		if (newString[x] == 48)
 		{
 			numArrayA.push_back(0);
@@ -75,6 +74,7 @@ void LargeInt::SetString(string newString)
 		{
 			numArrayA.push_back(9);
 		}
+		// If the current value at newString[x] is not a number then stop the function from running for a graceful exit of the operation.
 		else if (newString[x] != 49 || newString[x] != 50 || newString[x] != 51 || newString[x] != 52 || newString[x] != 53 ||
 			newString[x] != 54 || newString[x] != 55 || newString[x] != 56 || newString[x] != 57)
 		{
@@ -85,6 +85,30 @@ void LargeInt::SetString(string newString)
 		cout << numArrayA[x] << endl;
 	}
 	userString = newString;
+}
+
+std::string LargeInt::Addition(LargeInt &right)
+{
+	vector<int> tempVector;
+	int tempResult = 0;
+	int carry = 0;
+	string newerString = "";
+
+	// Only does vectors of the same .size();
+	for (size_t x = 0; x < right.GetDigits.size(); x++)
+	{
+		tempResult = numArrayA[numArrayA.size() - 1 - x] + right.GetDigits()[right.GetDigits().size - 1 - x] + carry;
+		tempVector.push_back(tempResult % 10);
+		carry = (tempResult - tempVector[tempVector.size() - 1]) / 10;
+	}
+	// If there are any numbers to carry over put them in the correct position.
+	if (carry != 0)
+	{
+		tempVector.push_back(carry);
+		// Set carry equal to zero again.
+		carry = 0;
+	}
+
 }
 
 LargeInt::~LargeInt()

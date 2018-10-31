@@ -1,5 +1,8 @@
 #ifndef LARGE_INT_
 #define LARGE_INT_
+
+#include <string>
+#include <iostream>
 #include <vector>
 
 class LargeInt
@@ -20,8 +23,8 @@ public:
 	std::string newString();
 	void SetString(std::string newString);
 
-	// Take the user inputA and transfer it to ReturnArrayA.
-	//void ReturnArrayA();
+	// Arithmetic
+	std::string Addition(LargeInt &right);
 
 	// Destructor
 	~LargeInt();

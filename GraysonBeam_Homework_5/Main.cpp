@@ -1,3 +1,6 @@
+// Author Grayson Beam
+// With shoutout to Lewis for all of his extra help.
+
 #include <iostream>
 #include <string>
 #include "LargeInt.h"
