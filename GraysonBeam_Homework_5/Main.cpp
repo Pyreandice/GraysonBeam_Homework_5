@@ -21,6 +21,9 @@ int main()
 	cin >> temp;
 	Large2.SetString(temp);
 
+	LargeInt Final;
+	cout << Final.Addition << endl;
+
 	system("pause");
 	return 0;
 }

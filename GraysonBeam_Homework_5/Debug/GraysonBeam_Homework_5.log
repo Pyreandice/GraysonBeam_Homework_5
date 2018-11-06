@@ -14,4 +14,5 @@ c:\users\grayson\source\repos\graysonbeam_homework_5\graysonbeam_homework_5\larg
   Main.cpp
 c:\users\grayson\source\repos\graysonbeam_homework_5\graysonbeam_homework_5\main.cpp(19): error C2086: 'std::string temp': redefinition
   c:\users\grayson\source\repos\graysonbeam_homework_5\graysonbeam_homework_5\main.cpp(13): note: see declaration of 'temp'
+c:\users\grayson\source\repos\graysonbeam_homework_5\graysonbeam_homework_5\main.cpp(25): error C3867: 'LargeInt::Addition': non-standard syntax; use '&' to create a pointer to member
   Generating Code...

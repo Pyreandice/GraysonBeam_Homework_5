@@ -95,7 +95,7 @@ std::string LargeInt::Addition(LargeInt &right)
 	string newerString = "";
 
 	// Only does vectors of the same .size();
-	for (size_t x = 0; x < right.GetDigits.size(); x++)
+	for (int x = 0; x < right.GetDigits.size(); x++)
 	{
 		tempResult = numArrayA[numArrayA.size() - 1 - x] + right.GetDigits()[right.GetDigits().size - 1 - x] + carry;
 		tempVector.push_back(tempResult % 10);
@@ -108,7 +108,6 @@ std::string LargeInt::Addition(LargeInt &right)
 		// Set carry equal to zero again.
 		carry = 0;
 	}
-
 }
 
 LargeInt::~LargeInt()
